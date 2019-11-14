@@ -1,0 +1,3 @@
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/aggregation_komposition_aufgabe_1/obj/Debug/netcoreapp3.0/aggregation_komposition_aufgabe_1.csprojAssemblyReference.cache
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/aggregation_komposition_aufgabe_1/obj/Debug/netcoreapp3.0/aggregation_komposition_aufgabe_1.AssemblyInfoInputs.cache
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/aggregation_komposition_aufgabe_1/obj/Debug/netcoreapp3.0/aggregation_komposition_aufgabe_1.AssemblyInfo.cs
