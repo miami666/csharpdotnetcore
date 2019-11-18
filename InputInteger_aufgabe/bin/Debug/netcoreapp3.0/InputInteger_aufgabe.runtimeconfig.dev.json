@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/home/uschi_glas/.dotnet/store/|arch|/|tfm|",
-      "/home/uschi_glas/.nuget/packages"
-    ]
-  }
-}
