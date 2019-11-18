@@ -43,7 +43,7 @@ namespace aggregation_komposition_aufgabe_1
 {
     class Kuchenstueck
     {
-        int gewicht;
+		private int gewicht;
         public int Gewicht { get => gewicht; }
         public Kuchenstueck(int g)
         {
@@ -52,18 +52,18 @@ namespace aggregation_komposition_aufgabe_1
     }
     class Kuchen
     {
-        static List<Kuchen> kuchenliste = new List<Kuchen>();
-         List<Kuchenstueck> stueckliste = new List<Kuchenstueck>();
-        int gesamtgewicht()
-        {          
-            return stueckliste.Sum(item => item.Gewicht); 
+		private static List<Kuchen> kuchenliste = new List<Kuchen>();
+		private List<Kuchenstueck> stueckliste = new List<Kuchenstueck>();
+        int Gesamtgewicht()
+        {
+            return stueckliste.Sum(item => item.Gewicht);
         }
         public static void ZeigeAlle()
         {
             foreach(Kuchen k in kuchenliste)
             {
                 Console.WriteLine("Kuchen: "+Convert.ToInt32(kuchenliste.IndexOf(k)+1));
-                Console.WriteLine("Gesamtgewicht: "+k.gesamtgewicht());
+                Console.WriteLine("Gesamtgewicht: "+k.Gesamtgewicht());
                 foreach (Kuchenstueck ks in k.stueckliste)
                 {
                     Console.WriteLine(ks.Gewicht);
@@ -89,7 +89,7 @@ namespace aggregation_komposition_aufgabe_1
     }
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             new Kuchen(new List<int>() );
             new Kuchen(new List<int>() { 10,20,30});
