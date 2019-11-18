@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 /*
     Führen Sie bitte die beiden folgenden Klassen ein:
@@ -7,12 +9,7 @@
                 1 privater Integer gewicht
                 1 Property für gewicht (NUR get)
                 1 Konstruktor:
-                    Übergabewert: 1 Integer gewicht
-                    Funktion: Weist dem Feld den Wert des Parameters zu
-                        /*
-     * Klasse Kuchen
-            Member:
-                private statische Liste vom Typen Kuchen
+          https://docs.microsoft.com/de-de/visualstudio/ide/managing-references-in-a-project?view=vs-2019       private statische Liste vom Typen Kuchen
                 private Liste aller Kuchenstücke
                 private Methode
                     Name: gesamtGewicht

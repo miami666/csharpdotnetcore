@@ -1,0 +1,11 @@
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe.deps.json
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe.runtimeconfig.json
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe.runtimeconfig.dev.json
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe.dll
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/bin/Debug/netcoreapp3.0/InputInteger_aufgabe.pdb
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/obj/Debug/netcoreapp3.0/InputInteger_aufgabe.csprojAssemblyReference.cache
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/obj/Debug/netcoreapp3.0/InputInteger_aufgabe.AssemblyInfoInputs.cache
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/obj/Debug/netcoreapp3.0/InputInteger_aufgabe.AssemblyInfo.cs
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/obj/Debug/netcoreapp3.0/InputInteger_aufgabe.dll
+/home/uschi_glas/Dokumente/visual_studiio_code/csharpdotnetcore/InputInteger_aufgabe/obj/Debug/netcoreapp3.0/InputInteger_aufgabe.pdb

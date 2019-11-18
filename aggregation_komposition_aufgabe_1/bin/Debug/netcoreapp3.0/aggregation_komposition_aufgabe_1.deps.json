@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "aggregation_komposition_aufgabe_1/1.0.0": {
+        "runtime": {
+          "aggregation_komposition_aufgabe_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "aggregation_komposition_aufgabe_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
