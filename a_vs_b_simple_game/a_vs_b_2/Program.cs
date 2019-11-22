@@ -99,11 +99,17 @@ namespace a_vs_b_2
                     {
                         a.x = x - 1;//nach oben (rows)
                     }
+                    else {
+
+                    }
                     break;
                 case 1:
                     if (a.x < 10)
                     {
                         a.x = x + 1; //nachunten (rows)
+                    }
+                    else {
+
                     }
                     break;
                 case 2:
@@ -111,11 +117,17 @@ namespace a_vs_b_2
                     {
                         a.y = y - 1; //nach links
                     }
+                    else {
+
+                    }
                     break;
                 case 3:
                     if (a.y < 10)
                     {
                         a.y = y + 1;
+                    }
+                    else {
+
                     }
                     break;
             }
@@ -157,11 +169,17 @@ namespace a_vs_b_2
                     {
                         b.x = x - 1;//nach oben (rows)
                     }
+                    else {
+                        b.x= x;
+                    }
                     break;
                 case 1:
                     if (b.x < 10)
                     {
                         b.x = x + 1; //nachunten (rows)
+                    }
+                    else {
+                        b.x=x;
                     }
                     break;
                 case 2:
@@ -169,11 +187,17 @@ namespace a_vs_b_2
                     {
                         b.y = y - 1; //nach links
                     }
+                    else {
+                        b.y=y;
+                    }
                     break;
                 case 3:
                     if (b.y < 10)
                     {
                         b.y = y + 1;
+                    }
+                    else {
+                        b.y=y;
                     }
                     break;
             }
@@ -182,7 +206,7 @@ namespace a_vs_b_2
     }
     class Program
     {
-        Random r = new Random(Guid.NewGuid().GetHashCode());
+        Random r = new Random();
         static void PrintGF(List<A_Mann> a, List<B_Mann> b)
         {
             //gamefield
@@ -239,9 +263,7 @@ namespace a_vs_b_2
                 nums[randomIndex] = nums[i];
                 nums[i] = temp;
             }
-            // Now your array is randomized and you can simply print them in order
-            for (int i = 0; i < 5; ++i)
-                Console.WriteLine(nums[i]);
+            // Now your     WriteLine(nums[i]);
             var a1 = new A_Mann() { name = "Achim", x = nums[0], y = rnd.Next(0,10), ImSpiel = true };
             var a2 = new A_Mann() { name = "Albert", x = nums[1], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
             var a3 = new A_Mann() { name = "Alex", x = nums[2], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
@@ -280,9 +302,9 @@ namespace a_vs_b_2
             {
                 for (int b = 0; b < 10; b++)
                 {
-                    Console.SetCursorPosition(startX + b, startY + h);
+                  //  Console.SetCursorPosition(startX + b, startY + h);
                    
-                    Console.Write(".");
+                    
                 }
             }
 
@@ -318,8 +340,8 @@ namespace a_vs_b_2
                 foreach (A_Mann al in aliste)
                 {
                     al.zufallsAktion(al);
-                    Console.SetCursorPosition(al.x, al.y);
-                Console.Write("A");
+                   // Console.SetCursorPosition(al.x, al.y);
+                //Console.Write("A");
                 }
                 foreach (B_Mann bl in bliste)
                 {
@@ -327,6 +349,7 @@ namespace a_vs_b_2
                 }
                 foreach (A_Mann al in aliste.ToList())
                 {
+                
                     
                     foreach (B_Mann bl in bliste.ToList())
                     {
@@ -353,12 +376,16 @@ namespace a_vs_b_2
                                     Console.WriteLine("A: " + aliste.Count());
                                     Console.WriteLine("B: " + bliste.Count());
                                     break;
+                                default:
+                                    continue;
                             }
                         }
                     }
                 }
-               PrintGF(aliste, bliste);
+                
+               //PrintGF(aliste, bliste);
                 System.Threading.Thread.Sleep(100);
+                
             } while (aliste.Count() > 1 && bliste.Count() > 1);
              // PrintGF(aliste, bliste);
             Console.ReadKey();
