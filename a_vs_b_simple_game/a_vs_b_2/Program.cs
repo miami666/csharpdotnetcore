@@ -104,7 +104,7 @@ namespace a_vs_b_2
                     }
                     break;
                 case 1:
-                    if (a.x < 10)
+                    if (a.x < 9)
                     {
                         a.x = x + 1; //nachunten (rows)
                     }
@@ -122,7 +122,7 @@ namespace a_vs_b_2
                     }
                     break;
                 case 3:
-                    if (a.y < 10)
+                    if (a.y < 9)
                     {
                         a.y = y + 1;
                     }
@@ -174,7 +174,7 @@ namespace a_vs_b_2
                     }
                     break;
                 case 1:
-                    if (b.x < 10)
+                    if (b.x < 9)
                     {
                         b.x = x + 1; //nachunten (rows)
                     }
@@ -192,7 +192,7 @@ namespace a_vs_b_2
                     }
                     break;
                 case 3:
-                    if (b.y < 10)
+                    if (b.y < 9)
                     {
                         b.y = y + 1;
                     }
@@ -383,10 +383,10 @@ namespace a_vs_b_2
                     }
                 }
                 
-               //PrintGF(aliste, bliste);
-                System.Threading.Thread.Sleep(100);
+               PrintGF(aliste, bliste);
+                System.Threading.Thread.Sleep(500);
                 
-            } while (aliste.Count() > 1 && bliste.Count() > 1);
+            } while (aliste.Count() > 0 && bliste.Count() > 0);
              // PrintGF(aliste, bliste);
             Console.ReadKey();
         }
