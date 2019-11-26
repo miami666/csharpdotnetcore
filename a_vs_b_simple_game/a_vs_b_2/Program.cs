@@ -248,10 +248,7 @@ namespace a_vs_b_2
         static void Main(string[] args)
         {
             int[,] spielfeld = new int[10, 10];
-            //const int breite = 30;
-            //const int höhe = 20;
-            const int startX = 2;
-            const int startY = 5;
+
             Random rnd = new Random(Guid.NewGuid().GetHashCode());
             var nums = Enumerable.Range(0, 10).ToArray();
             var numsb = Enumerable.Range(0, 10).ToArray();
@@ -265,10 +262,10 @@ namespace a_vs_b_2
             }
             // Now your     WriteLine(nums[i]);
             var a1 = new A_Mann() { name = "Achim", x = nums[0], y = rnd.Next(0,10), ImSpiel = true };
-            var a2 = new A_Mann() { name = "Albert", x = nums[1], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var a3 = new A_Mann() { name = "Alex", x = nums[2], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var a4 = new A_Mann() { name = "Anton", x = nums[3], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var a5 = new A_Mann() { name = "August", x = nums[4], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
+            var a2 = new A_Mann() { name = "Albert", x = nums[1], y = rnd.Next(0,10), ImSpiel = true };
+            var a3 = new A_Mann() { name = "Alex", x = nums[2], y = rnd.Next(0, 10), ImSpiel = true };
+            var a4 = new A_Mann() { name = "Anton", x = nums[3], y = rnd.Next(0, 10), ImSpiel = true };
+            var a5 = new A_Mann() { name = "August", x = nums[4], y = rnd.Next(0, 10), ImSpiel = true };
             List<A_Mann> aliste = new List<A_Mann>();
             aliste.Add(a1);
             aliste.Add(a2);
@@ -286,11 +283,11 @@ namespace a_vs_b_2
             // Now your array is randomized and you can simply print them in order
             for (int i = 0; i < 5; ++i)
                 Console.WriteLine(numsb[i]);
-            var b1 = new B_Mann() { name = "Bert", x = numsb[0], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var b2 = new B_Mann() { name = "Benjamin", x = numsb[1], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var b3 = new B_Mann() { name = "Bjoern", x = numsb[2], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var b4 = new B_Mann() { name = "Bodo", x = numsb[3], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
-            var b5 = new B_Mann() { name = "Bruno", x = numsb[4], y = rnd.Next(0, spielfeld.GetLength(1)), ImSpiel = true };
+            var b1 = new B_Mann() { name = "Bert", x = numsb[0], y = rnd.Next(0, 10), ImSpiel = true };
+            var b2 = new B_Mann() { name = "Benjamin", x = numsb[1], y = rnd.Next(0, 10), ImSpiel = true };
+            var b3 = new B_Mann() { name = "Bjoern", x = numsb[2], y = rnd.Next(0, 10), ImSpiel = true };
+            var b4 = new B_Mann() { name = "Bodo", x = numsb[3], y = rnd.Next(0, 10), ImSpiel = true };
+            var b5 = new B_Mann() { name = "Bruno", x = numsb[4], y = rnd.Next(0, 10), ImSpiel = true };
             List<B_Mann> bliste = new List<B_Mann>();
             bliste.Add(b1);
             bliste.Add(b2);
