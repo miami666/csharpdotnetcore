@@ -56,7 +56,7 @@ namespace interfaces_aufgabe_2
     {
         public string Name { get; set; }
         public Adresse Anschrift { get; set;  }
-       public void Etikett()
+        public void Etikett()
         {
             //Console.WriteLine(Name+" "+Anschrift.str+" "+Anschrift.hnr+" "+Anschrift.plz+" "+Anschrift.ort);
             Adressverwaltung.Etikett(this);
@@ -98,6 +98,9 @@ namespace interfaces_aufgabe_2
             personen.Add(f1);
             foreach (IAdr p in personen)
             {
+                if(p.GetType().ToString()=="interfaces_aufgabe_2.Firma") {
+                    System.Console.WriteLine("Firma");
+                }
                 p.Etikett();
 
             }
